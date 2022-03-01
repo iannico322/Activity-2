@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="icon.png">
+    <title>Ian Nico Caulin</title>
+    <style>
+        ::-webkit-scrollbar {
+            width: 15px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            height: 200vh;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h1,
+        h2,
+        h3 {
+            position: relative;
+            font-family: Arial;
+            width: 1500px;
+            z-index: 1;
+        }
+
+        h1 {
+            color: #d5d1d0;
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 8vh;
+            padding-top: 20vh;
+            padding-left: 105vh;
+            margin: auto;
+        }
+
+        h3 {
+            color: #14969e;
+            font-size: 6vh;
+            padding-left: 109vh;
+            margin: auto;
+            font-weight: 100;
+        }
+
+        h2 {
+            color: #464646;
+            font-size: 10vh;
+            margin-top: 24vh;
+            margin-left: 95vh;
+            font-weight: 10;
+            padding-left: 4vh;
+            cursor: pointer;
+            background-color: rgb(29, 29, 29);
+            border-radius: 10px;
+            transition: 0.4s;
+
+        }
+
+        h2:hover {
+            transition: 0.4s;
+            color: #af646446;
+            background-color: rgb(29, 29, 29);
+        }
+
+        .bg-pic {
+            position: absolute;
+            z-index: -1;
+        }
+
+        .page1 {
+            width: 100;
+            height: 100vh;
+            overflow: hidden;
+
+
+        }
+
+        .fa {
+            font-size: 4vh;
+            color: #b9b9b9;
+            padding-top: 3vh;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+
+        .fa:hover {
+            transition: 0.4s;
+            color: #9e1414;
+        }
+
+        li {
+            position: relative;
+            list-style-type: none;
+        }
+
+        ul {
+            padding-left: 5vh;
+        }
+
+        .page2 {
+            position: relative;
+            height: 100vh;
+            background-color: #2a2a2a;
+        }
+        .profile{
+            height: 100%;
+            width: 100%;
+            display: block;
+            padding-bottom: 1vh;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: -1;
+        }
+        h6{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #888;
+            font-size: 4vh;
+        }
+        header p{
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(9, 122, 122);
+            font-size: 2.5vh;
+            text-transform: uppercase;
+            font-style: italic;
+        }
+        header span{
+            color: rgb(100, 100, 100);
+        }
+        content{
+            position: absolute;
+            display: inline;
+            color: #888;
+            font-size: 2vh;
+            text-align: none;
+            padding-top: 0vh;
+            margin-left: 40vh;
+        
+        }
+
+        content p{
+            text-align: justify;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(9, 122, 122);
+            font-size: 2.5vh;
+            text-transform: uppercase;
+            font-style: italic;
+            margin-left: 2vh;
+            
+        }
+        content span{
+            color: rgb(100, 100, 100);
+        }
+        content h4{
+            text-align: justify;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(9, 122, 122);
+            font-size: 4.5vh;
+        }
+
+        header h4{
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(9, 122, 122);
+            font-size: 4.5vh;
+        }
+        input {
+            width: 30vh;
+            height: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            border: none;
+            font-style: italic;
+            background-color: #dbdbdb;
+            color: rgb(9, 122, 122);
+            font-size: 2vh;
+            margin-top: 1vh;
+            padding: 1vh;
+            border-radius: 5px;
+            transition: 0.4s;
+            outline: none;
+        }
+        footer{
+            display: block;
+            bottom: 0;
+            margin-top: 43vh;
+            background-color: #2a2a2a;
+            color: rgb(112, 112, 112);
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body bgcolor="#2a2a2a">
+
+
+
+    <div class="page1" id="one">
+        <img src="profile-picture.png" alt="ian-picture" class="bg-pic" height="100%">
+        <h1>
+            <b><em>Ian Nico M. Caulin</em></b>
+        </h1>
+        <h3>
+            <b><em>BSIT-2R5</em></b>
+        </h3>
+
+        <a href="#two">
+            <h2><b>   ABOUT ME </b></h2>
+        </a>
+
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/why.stalking/" target="_blank" class="fa fa-facebook"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/diakosinico/" target="_blank" class="fa fa-instagram"></a>
+            </li>
+            <li>
+                <a href="https://github.com/iannico322" target="_blank" class="fa fa-github"></a>
+            </li>
+        </ul>     
+    </div>
+
+    <div class="page2" id="two">
+        <header>
+            <a href="#one"><img src="profile.png" alt="" class="profile"></a>
+            <h6><b><em>Ian Nico M. Caulin</em></b></h6>
+            <p> "imong gugma 'rag Javascript... di masabtan"</p> <br>
+            <p> <span > Age : </span> 19 yrs old</p>
+            <p> <span > birthdate : </span>04 - 21 - 02</p>
+            <h4>__________________________________________________________________</h4><br>
+
+            
+        </header>
+
+        <content>
+            <h4>Contact Details</h4><br>
+            <p> <span > address : </span> Zone 1 Villa de Oro, CDO   &nbsp&nbsp&nbsp&nbsp&nbsp<span > Mother : </span>  melita caulin </p>
+            <p> <span > contact : </span> 0995-956-0091  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span > father : </span>  victor caulin </p></p>
+            <p> <span > email : </span>  iannicocaulin@gmail.com  &nbsp&nbsp&nbsp&nbsp&nbsp<span > girlfriend : </span>  Null </p></p>
+            <br>
+            <p> <span > facebook &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp instagram</span><br> <input value="https://www.facebook.com/why.stalking/" type="text"> &nbsp&nbsp&nbsp&nbsp<input value="https://www.instagram.com/diakosinico/" type="text">  </p>
+            <br>
+            <p> <span > github </span><br><input value="https://github.com/iannico322" type="text">  </p>    
+        </content>
+        <footer>
+            <br>
+            <p> <span > Copyright &copy; </span> 2022 Ian Nico M. Caulin - IT2R5</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
