@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png">
+    <title>Log In</title>
+
+    <style>
+        body {
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+            background-color: #2a2a2a;
+
+        }
+        form{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 350px;
+            height: 20vh;
+            padding: 40px;
+            background: rgb(94, 94, 94);
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); 
+            border-radius: 2vh;
+            
+        }
+        input{
+            outline: none;
+            border: none;
+            border-bottom: 1px solid rgb(255, 255, 255);
+            background: transparent;
+            outline: none;
+            padding: 1vh;
+            color: rgb(2, 208, 223);
+            font-size: 16px;
+            margin-bottom: 20px;
+            width: 94%;
+            
+        }
+        button{
+            outline: none;
+            border: none;
+            background: rgb(27, 27, 27);
+            color: rgb(139, 139, 139);
+            font-size: 16px;
+            cursor: pointer;
+            width: 12vh;
+            height: 6vh;
+            padding: 10px;
+            border-radius: 2vh;
+            margin-top: 20px;
+            transition: .4s;
+        }
+        button:hover{
+            transition: .4s;
+            color: rgb(156, 40, 40);
+        }
+        ::placeholder {
+            color: rgb(14, 166, 177);
+            opacity: 1; 
+            }
+    </style>
+</head>
+<body>
+
+    <form action="main.html">
+        <input type="text" placeholder="username">
+        <input type="password" placeholder="password">
+        <button value="submit">Log In</button>
+    </form>
+</body>
+</html>
